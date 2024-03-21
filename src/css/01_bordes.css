@@ -1,3 +1,6 @@
+body{
+    background-color: blanchedalmond;
+}
 #parrafo-prueba {
     background-color: black;
     color: white;
@@ -11,6 +14,7 @@
     border-left-width: 12px;  */
     /* border-width: 20px 35px 22px 12px; */
     border-width: 40px 35px;
+    border-radius: 40px;
 }
 
 p.dotted {
@@ -55,4 +59,68 @@ p.hidden {
 
 p.mix {
     border-style: dotted dashed solid double;
+}
+
+/* La propiedad border-width con tamaño especifico*/
+p.uno {
+    border-style: solid;
+    border-width: 5px 20px;
+    /* 5px top and bottom, 20px on the sides */
+}
+
+p.dos {
+    border-style: solid;
+    border-width: 20px 5px;
+    /* 20px top and bottom, 5px on the sides */
+}
+
+p.tres {
+    border-style: solid;
+    border-width: 25px 10px 4px 35px;
+    /* 25px top, 10px right, 4px bottom and 35px left */
+}
+
+#seccion{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#imagen1{
+    width: 500px;
+    height: auto;
+    border: 15px groove rgb(231, 129, 88);
+    border-width: 50px 30px;
+    border-radius: 50px;
+}
+
+#imagen2{
+    width: 500px;
+    height: auto;
+    border: 30px dotted rgb(241, 221, 104);
+    border-width: 35px 30px 20px 15px;
+    border-radius: 25px;
+}
+
+#imagen3{
+    width: 500px;
+    height: auto;
+    border: 25px double rgb(0, 153, 255);
+    border-width: 50px 25px 20px;
+    border-radius: 30px;
+}
+
+#imagen4{
+    width: 500px;
+    height: auto;
+    border: 15px ridge rgb(17, 75, 43);
+    border-width: 20px 25px 60px;
+    border-radius: 50px;
+}
+
+#imagen5{
+    width: 500px;
+    height: auto;
+    border: 35px inset rgb(61, 17, 75);
+    border-width: 30px 35px 10px;
+    border-radius: 30px;
 }
